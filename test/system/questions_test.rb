@@ -5,6 +5,7 @@ class QuestionsTest < ApplicationSystemTestCase
     visit ask_url
     fill_in "question", with: "Hello"
     click_on "Ask"
+    take_screenshot
 
     assert_text "I don't care, get dressed and go to work!"
   end
